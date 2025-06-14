@@ -25,7 +25,6 @@
             padding: 0 40px;
         }
 
-        /* Header */
         header {
             padding: 30px 0;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -192,22 +191,90 @@
             border-radius: 12px;
             padding: 60px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-            min-height: 800px;
+            color: #000;
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
         }
 
-        .cv-placeholder {
+        .cv-header {
             text-align: center;
-            color: #64748b;
-            font-size: 18px;
-            padding: 100px 20px;
-            border: 2px dashed #e2e8f0;
-            border-radius: 8px;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ddd;
         }
 
-        .cv-placeholder h3 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #475569;
+        .cv-name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .cv-contact {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .cv-tagline {
+            font-style: italic;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .cv-section {
+            margin-bottom: 25px;
+        }
+
+        .cv-section-title {
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: #000;
+            border-bottom: 1px solid #000;
+            padding-bottom: 3px;
+        }
+
+        .cv-content {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .cv-item {
+            margin-bottom: 15px;
+        }
+
+        .cv-position {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .cv-company {
+            font-style: italic;
+            color: #333;
+        }
+
+        .cv-date {
+            float: right;
+            font-style: italic;
+            color: #666;
+        }
+
+        .cv-description {
+            margin-top: 5px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .cv-skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .cv-education-item {
+            margin-bottom: 10px;
         }
 
         @media (max-width: 768px) {
@@ -248,7 +315,7 @@
                 padding-top: 50px;
             }
         }
-
+        
         .page {
             opacity: 0;
             transform: translateY(20px);
@@ -276,23 +343,24 @@
     <div id="home" class="page active">
         <div class="container">
             <div class="home-content">
-                <div class="profile-img">👨‍💻</div>
-                <p class="intro-text">Heyo, my name is</p>
-                <h1 class="name">Sulaiman</h1>
-                <p class="tagline">Graphic Designer., Visual Communicator | Ex Telkomsel</p>
+                <div class="profile-img">:hi</div>
+                <p class="intro-text">Hi, my name is</p>
+                <h1 class="name">Sulaiman Abdul Aziz</h1>
+                <p class="tagline">Graphic Designer., Creative Strategist | Ex Telkomsel</p>
                 <p class="description">
-                    Creative and versatile graphic designer with a Diploma in Graphic Communication Design from NAFA Singapore, I bring a hands-on experience in digital arts, branding, UX/UI design, and marketing visuals. 
-                  I’ve led projects across multiple industries from multiple companies in Indonesia and Singapore. Currently based in Singapore. <span class="highlight">Open to S Pass sponsorship.</span> I am <span class="highlight">Available immediately</span>.
+                    I'm a creative and versatile graphic designer with a Diploma in Graphic Communication Design from 
+                    <span class="highlight">NAFA Singapore</span>. I bring hands-on experience in digital arts, branding, UX/UI design, and 
+                    marketing visuals. I've led projects across multiple industries from companies in <span class="highlight">Indonesia and Singapore</span>.
                 </p>
                 <div class="social-links">
-                    <a href="#" class="social-link" title="GitHub">
+                    <a href="mailto:sabdaziz@proton.me" class="social-link" title="Email">
                         <svg viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                     </a>
-                    <a href="#" class="social-link" title="LinkedIn">
+                    <a href="https://www.behance.net/sulaiman_abd_aziz" class="social-link" title="Behance">
                         <svg viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/>
                         </svg>
                     </a>
                 </div>
@@ -305,13 +373,13 @@
             <div class="about-content">
                 <h2 class="about-title">About Me</h2>
                 <div class="about-text">
-                    <p>Creative and versatile graphic designer with a Diploma in Graphic Communication Design from NAFA Singapore, I bring a hands-on experience in digital arts, branding, UX/UI design, and marketing visuals. I’ve led projects across multiple industries from multiple companies in Indonesia and Singapore.</p>
+                    <p>I'm a creative and versatile graphic designer specializing in digital arts, branding, UX/UI design, and marketing visuals. My journey began with a passion for visual communication and has evolved into expertise across multiple design disciplines.</p>
                 </div>
                 <div class="about-text">
-                    <p>Currently develop Graphic Design and Videography</p>
+                    <p>Currently pursuing my <span class="highlight">Diploma in Graphic Communication Design</span> at NAFA Singapore, I've gained hands-on experience working with companies in both Indonesia and Singapore. My work spans from digital marketing campaigns to complete brand identity systems.</p>
                 </div>
                 <div class="about-text">
-                    <p>When I'm not editing, I enjoy smoke and coffee break</p>
+                    <p>I'm proficient in the <span class="highlight">Adobe Creative Suite</span> and have experience in UI/UX design, campaign management, and cross-functional collaboration. I'm passionate about creating designs that not only look great but also drive results and engage audiences effectively.</p>
                 </div>
             </div>
         </div>
@@ -322,10 +390,87 @@
             <div class="resume-content">
                 <h2 class="resume-title">Resume</h2>
                 <div class="cv-container">
-                    <div class="cv-placeholder">
-                        <h3>Your CV Goes Here</h3>
-                        <p>Replace this section with your actual resume/CV content.</p>
-                        <p>You can embed a PDF, add formatted text, or create a custom layout.</p>
+                    <div class="cv-header">
+                        <h1 class="cv-name">SULAIMAN ABDUL AZIZ</h1>
+                        <div class="cv-contact">Singapore • sabdaziz@proton.me • Behance</div>
+                        <div class="cv-tagline">Graphic Designer, Visual Communicator, Creative Strategist</div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Summary</h2>
+                        <div class="cv-content">
+                            Creative and versatile graphic designer with a Diploma in Graphic Communication Design from NAFA Singapore, I bring a hands-on experience in digital arts, branding, UX/UI design, and marketing visuals. I've led projects across multiple industries from multiple companies in Indonesia and Singapore. Currently based in Singapore. Open to S Pass sponsorship. Available immediately.
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Work Experience</h2>
+                        <div class="cv-content">
+                            <div class="cv-item">
+                                <div class="cv-position">UI/UX Graphic Designer</div>
+                                <div class="cv-company">AUTIUM Jewelry <span class="cv-date">Aug 2024 – Dec 2024</span></div>
+                                <div class="cv-description">
+                                    • Led end-to-end design for website and social media, achieving a 393% (1M) increase.<br>
+                                    • Directed the visual identity and content calendar, resulting in over 1M digital impressions.<br>
+                                    • Managed marketing collabs and campaign visuals, aligning brand tone across platforms.
+                                </div>
+                            </div>
+                            <div class="cv-item">
+                                <div class="cv-position">Marketing and Communications Intern</div>
+                                <div class="cv-company">Telkomsel <span class="cv-date">May - July 2023</span></div>
+                                <div class="cv-description">
+                                    • Lead and assisted Campaign #PastiAdaSolusi with more than 100k impressions.<br>
+                                    • Directed on Design of Indonesia Independence Day Digital Assets for Telkomsel.<br>
+                                    • Cross Function Collaboration within internal business units.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Education</h2>
+                        <div class="cv-content">
+                            <div class="cv-education-item">
+                                <strong>Diploma in Graphic Communication</strong><br>
+                                NAFA, Singapore <span class="cv-date">2022 – 2025</span><br>
+                                Specialization in Advanced Graphic Designer. Graphic design practices.<br>
+                                Courses: Design-Led Strategy and entrepreneurship - The University of Sydney
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Skills</h2>
+                        <div class="cv-content">
+                            Adobe Creative Suite (Photoshop, Illustrator, InDesign, After Effects, Premiere Pro, Lightroom, etc.) for digital and print projects.
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Languages</h2>
+                        <div class="cv-content">
+                            <div class="cv-skills-grid">
+                                <div>English (Duolingo: 120/160 - Business Proficiency)</div>
+                                <div>Bahasa Indonesia (Native)</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Volunteering</h2>
+                        <div class="cv-content">
+                            <strong>LASKAR NAFA - Indonesian Society at NAFA (2023)</strong><br>
+                            Digital Creator - Built visual art resources and guided young creatives via Behance.
+                        </div>
+                    </div>
+
+                    <div class="cv-section">
+                        <h2 class="cv-section-title">Certification & Awards</h2>
+                        <div class="cv-content">
+                            • Adobe Illustrator CC Masterclass<br>
+                            • Most Improved GPA Awards Semester 5<br>
+                            • Letter of Recommendations
+                        </div>
                     </div>
                 </div>
             </div>
